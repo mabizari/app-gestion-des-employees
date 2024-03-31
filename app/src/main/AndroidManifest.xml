@@ -12,6 +12,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Mabizari_Abdallah__CHZD"
         tools:targetApi="31">
+        <meta-data
+            android:name="com.google.android.actions"
+            android:resource="@xml/circle_BackGround" />
+
+        <activity
+            android:name=".emploee_item"
+            android:exported="false" />
+        <activity
+            android:name=".EmployeeProfile"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
