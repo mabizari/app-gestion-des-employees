@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">dam.app</string>
+    <string name="Title">EMPL</string>
+    <string name="please_enter_informations_below">veuillez entrer vos informations ci-dessous</string>
+    <string name="first_name">prenom</string>
+    <string name="last_name">nom</string>
+    <string name="phone">numero de telephone</string>
+    <string name="email">address email</string>
+    <string name="add_employee">ajouter Employee</string>
+    <string name="message">souhaitez-vous afficher les employes</string>
+    <string name="cunsult_Grid">afficher in Grid</string>
+    <string name="cunsult_List">afficher in List</string>
+    <string name="search">rechercher pour un employe ...</string>
+    <string name="unique">ID</string>
+    <string name="modify">Modifier</string>
+    <string name="delete">Supprimer</string>
+    <string name="contact" >Contact</string>
+    <string name="contacts">Contacts</string>
+    <string name="phone_call">Phone call</string>
+    <string name="sms_text">message SMS</string>
+    <string name="sms_button">envoyer SMS</string>
+    <string name="email_button">envoyer un email</string>
+    <string name="send_email">Envoyer email</string>
+    <string name="send">envoyer ver:</string>
+    <string name="email_subject">sujet de courriel</string>
+    <string name="email_body">corps de l\'email ..</string>
+    <string name="page3">Profile</string>
+</resources>

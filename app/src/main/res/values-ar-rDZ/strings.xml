@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">موظف</string>
+    <string name="Title">موظف</string>
+    <string name="please_enter_informations_below">الرجاء إدخال المعلومات أدناه</string>
+    <string name="first_name">الاسم الأول</string>
+    <string name="last_name">الاسم الأخير</string>
+    <string name="phone">رقم الهاتف</string>
+    <string name="email">بريد الكتروني</string>
+    <string name="add_employee">اضافة موظف</string>
+    <string name="message">هل ترغب في عرض الموظفين!</string>
+    <string name="cunsult_Grid">تحقق من الموظفين عبر جدول</string>
+    <string name="cunsult_List">تحقق من الموظفين عبر القائمة</string>
+    <string name="search">ابحث عن موظف..</string>
+    <string name="modify">تعديل</string>
+    <string name="delete">حذف</string>
+    <string name="unique">المعرف</string>
+    <string name="contact" >الاتصال</string>
+    <string name="contacts">جهات الاتصال</string>
+    <string name="phone_call">مكالمة هاتفية</string>
+    <string name="sms_button">إرسال بريد</string>
+    <string name="sms_text"> نص البريد</string>
+    <string name="email_button">إرسال بريد إلكتروني</string>
+    <string name="send_email">إرسال بريد إلكتروني</string>
+    <string name="send">إرسال بريد</string>
+    <string name="email_subject">موضوع البريد الإلكتروني</string>
+    <string name="email_body">نص البريد الإلكتروني..</string>
+    <string name="page3">"حساب تعريفي "</string>
+</resources>
+
+
