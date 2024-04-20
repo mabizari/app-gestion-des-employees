@@ -3,6 +3,7 @@ package com.example.damapp;
 import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ImageView;
@@ -25,6 +26,8 @@ public class addActivity2 extends AppCompatActivity   {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        setTheme(R.style.Theme_Damapp);
         setContentView(R.layout.activity_add2);
 
         mdb = new DBhelper(addActivity2.this);

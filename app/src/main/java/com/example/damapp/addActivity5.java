@@ -17,6 +17,7 @@ public class addActivity5 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setTheme(R.style.Theme_Damapp);
         setContentView(R.layout.activity_add5);
 
 

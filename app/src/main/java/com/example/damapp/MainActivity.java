@@ -2,26 +2,39 @@ package com.example.damapp;
 
 import static android.widget.Toast.LENGTH_LONG;
 
+import android.app.Activity;
+import android.content.ClipData;
+import android.content.Context;
 import android.content.Intent;
+import android.content.res.Configuration;
 import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.media.RouteListingPreference;
 import android.net.Uri;
-import android.os.Build;
 import android.os.Bundle;
 import android.os.ParcelFileDescriptor;
 import android.provider.MediaStore;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
+import android.view.SubMenu;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.PopupMenu;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import java.io.ByteArrayOutputStream;
 import java.io.FileDescriptor;
 import java.io.IOException;
+import java.util.Locale;
+import java.util.Objects;
 
 public class MainActivity extends AppCompatActivity {
     private static final int RESULT_LOAD_IMAGE = 1;
@@ -35,12 +48,14 @@ public class MainActivity extends AppCompatActivity {
     Button consult2;
     EditText id,first_name,last_name,tel ,email;
     DBhelper  db;
+    int i=1;
 
     @Override
     protected void onCreate(  Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setTheme(R.style.Theme_Damapp);
        setContentView(R.layout.activity_main);
-
+        onNightModeChanged(R.style.Base_Theme_Damapp);
         id=findViewById(R.id.id);
         first_name=findViewById(R.id.fname);
         last_name=findViewById(R.id.lname);
@@ -146,5 +161,40 @@ public class MainActivity extends AppCompatActivity {
         return stream.toByteArray();
     }
 
+    public void setLocal(Activity activity, String langcode){
 
+        Locale locale=new Locale(langcode);
+        Locale.setDefault(locale);
+        Configuration config=getResources().getConfiguration();
+        config.setLocale(locale);
+        getResources().updateConfiguration(config,getResources().getDisplayMetrics());
+
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+
+        getMenuInflater().inflate(R.menu.options,menu);
+        return super.onCreateOptionsMenu(menu);
+
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        if(item.getItemId()==R.id.item_francais) {
+            setLocal(MainActivity.this,"fr");
+            finish();
+            startActivity(getIntent());
+
+        }else if(item.getItemId()==R.id.item_engilsh){
+            setLocal(MainActivity.this,"en");
+            finish();
+            startActivity(getIntent());
+        }else if(item.getItemId()==R.id.item_arab){
+            setLocal(MainActivity.this,"ar");
+            finish();
+            startActivity(getIntent());
+        }
+        return super.onOptionsItemSelected(item);
+    }
 }

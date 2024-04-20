@@ -26,6 +26,10 @@
     <string name="email_subject">موضوع البريد الإلكتروني</string>
     <string name="email_body">نص البريد الإلكتروني..</string>
     <string name="page3">"حساب تعريفي "</string>
+    <string name="languages">languages</string>
+    <string name="themes">themes</string>
+    <string name="light">Light</string>
+    <string name="dark">Dark</string>
 </resources>
 
 

@@ -26,5 +26,9 @@
     <string name="email_subject">email subject</string>
     <string name="email_body">email body ..</string>
     <string name="page3">Profile</string>
+    <string name="languages">languages</string>
+    <string name="themes">themes</string>
+    <string name="light">Light</string>
+    <string name="dark">Dark</string>
 
 </resources>

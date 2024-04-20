@@ -25,4 +25,8 @@
     <string name="email_subject">sujet de courriel</string>
     <string name="email_body">corps de l\'email ..</string>
     <string name="page3">Profile</string>
+    <string name="languages">languages</string>
+    <string name="themes">themes</string>
+    <string name="light">Light</string>
+    <string name="dark">Dark</string>
 </resources>

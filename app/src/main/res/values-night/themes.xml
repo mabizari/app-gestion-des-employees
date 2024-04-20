@@ -1,7 +1,11 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.Damapp" parent="Theme.AppCompat.Light.NoActionBar">
+    <style name="Base.Theme.Damapp" parent="Theme.AppCompat">
         <!-- Customize your dark theme here. -->
+        <item name="colorPrimary">@color/design_default_color_primary_dark</item>
+        <item name="colorPrimaryDark">@color/red</item>
+        <item name="colorAccent">@color/material_dynamic_primary10</item>
         <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
     </style>
+
 </resources>
